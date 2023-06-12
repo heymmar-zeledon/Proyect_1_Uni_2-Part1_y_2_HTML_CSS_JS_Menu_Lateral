@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const saludarButton = document.getElementById('saludarButton');
 const contenido = document.querySelector('.contenido');
 const saludoMensaje = document.getElementById('saludoMensaje');
+const formularioDiv = document.getElementById('formulario');
 
 
 menuToggle.addEventListener('click', () => {
@@ -23,4 +24,8 @@ function ocultarMensaje() {
     var saludoMensaje = document.getElementById("saludoMensaje");
     saludoMensaje.classList.remove("show");
     saludoMensaje.classList.add("oculto");
+}
+
+function showForm() {
+    formularioDiv.classList.remove('hidden');
 }
