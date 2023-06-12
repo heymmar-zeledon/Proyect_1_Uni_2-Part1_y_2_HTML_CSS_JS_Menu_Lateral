@@ -32,8 +32,14 @@ function ocultarMensaje() {
 
 function showForm() {
     formularioDiv.classList.remove('hidden');
+    // Mostrar la tabla
+    document.getElementById("datosTabla").classList.remove("hidden");
 }
 
 function removeForm() {
     formularioDiv.classList.add('hidden');
+}
+
+function ocultarGrid(){
+    document.getElementById("datosTabla").classList.add("hidden");
 }

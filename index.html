@@ -14,7 +14,7 @@
     </div>
     <div class="menu">
         <ul>
-            <li><button onclick="removeForm(),showButton()"> Inicio </button></li>
+            <li><button onclick="removeForm(), ocultarGrid(), showButton()"> Inicio </button></li>
             <li><button onclick="removeButton(), ocultarMensaje(), showForm()"> Formulario </button></li>
         </ul>
     </div>
@@ -30,31 +30,41 @@
             <h2>Formulario</h2>
             <form>
                 <div>
-                    <label for="nombre"><i class="fas fa-user"></i>Nombre:</label>
+                    <label for="nombre">
+                        <i class="fas fa-user"></i>
+                        Nombre:
+                    </label>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                 </div>
                 <div>
-                    <label for="apellido"><i class="fas fa-user"></i>Apellido:</label>
+                    <label for="apellido">
+                        <i class="fas fa-user"></i>
+                        Apellido:
+                    </label>
                     <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
                 </div>
                 <div>
-                    <label for="correo"><i class="fas fa-envelope"></i>Correo:</label>
+                    <label for="correo">
+                        <i class="fas fa-envelope"></i>
+                        Correo:
+                    </label>
                     <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
                 </div>
-                <button type="submit"><i class="fas fa-save"></i>Guardar</button>
+                <button type="submit" onclick="guardarRegistro()"><i class="fas fa-save"></i>Guardar</button>
             </form>
         </div>
         <div class="GRID-data">
-            <table id="datosTabla">
+            <table id="datosTabla" class="hidden">
                 <thead>
                     <tr>
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Correo</th>
+                        <th>Opciones</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!-- Aquí se agregarán las filas de datos dinámicamente -->
+                <tbody id="tablaBody">
+                    
                 </tbody>
             </table>
         </div>
