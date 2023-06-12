@@ -40,18 +40,52 @@
     border-radius: 3px;
     border: none;
     width: 100%;
+    height: 30px;
     background-color: #4c4ca8;
     color: #fff;
     cursor: pointer;
     text-align: center;
-}
-
-.menu button p{
     font-family:'Times New Roman', Times, serif;
     font-size:medium;
 }
 
 .contenido {
-    margin-left: 220px;
+    margin-left: 0;
     padding: 20px;
+    transition: margin-left 0.3s ease;
+    -webkit-transition: margin-left 0.3s ease;
+    -moz-transition: margin-left 0.3s ease;
+    -ms-transition: margin-left 0.3s ease;
+    -o-transition: margin-left 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.menu.active ~ .contenido {
+    margin-left: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.saludoBton{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 200px;
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+    background-color: #0c9b18;
+    color: #fff;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
