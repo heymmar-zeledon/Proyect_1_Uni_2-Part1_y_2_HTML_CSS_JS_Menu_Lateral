@@ -18,8 +18,12 @@
         </ul>
     </div>
     <div class="contenido">
+        <div class="saludo-message" id="saludoMensaje">
+            <p>¡Hola! Bienvenido/a</p>
+            <i class="fas fa-times eliminar-icono" onclick="ocultarMensaje()"></i>
+        </div>
         <div id="saludarButton" class="hidden">
-            <button onclick="hideButton()" class="saludoBton">Saludo</button>
+            <button onclick="showSaludo()" class="saludoBton">Saludo</button>
         </div>
     </div>
     <script src="Javascript/all.js"></script>
