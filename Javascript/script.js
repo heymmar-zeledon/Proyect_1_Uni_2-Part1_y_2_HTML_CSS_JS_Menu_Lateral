@@ -15,6 +15,10 @@ function showButton() {
     saludarButton.classList.remove('hidden');
 }
 
+function removeButton(){
+    saludarButton.classList.add('hidden');
+}
+
 function showSaludo() {
     saludoMensaje.classList.remove("oculto");
     saludoMensaje.classList.add("show");
@@ -28,4 +32,8 @@ function ocultarMensaje() {
 
 function showForm() {
     formularioDiv.classList.remove('hidden');
+}
+
+function removeForm() {
+    formularioDiv.classList.add('hidden');
 }
